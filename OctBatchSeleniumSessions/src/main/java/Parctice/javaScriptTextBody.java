@@ -70,10 +70,10 @@ public class javaScriptTextBody {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://login.yahoo.com/");//given url
 		
-		//String Text=driver.findElement(By.tagName("body")).getText();
-		//System.out.println(Text);
+		String Text=driver.findElement(By.tagName("body")).getText();
+		System.out.println(Text);
 		
-		//how to get inner text
+		//how to get inner text of page and generate alert
 		
 //		pageInnerText(driver);
 		Thread.sleep(2000);

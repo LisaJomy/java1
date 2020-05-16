@@ -18,15 +18,15 @@ public class MovetoelementConcept {
 	// drop down with mouse actions	
 		
 WebElement parentMenu =driver.findElement(By.className("menulink"));
-//Actions act = new Actions(driver);//n
-//act.moveToElement(parentMenu).build().perform();//n
+Actions act = new Actions(driver);//n
+act.moveToElement(parentMenu).build().perform();//n
 Thread.sleep(5000);
-//WebElement subMenu=driver.findElement(By.linkText("COURSES"));//n
-//subMenu.click();//n	
+WebElement subMenu=driver.findElement(By.linkText("COURSES"));//n
+subMenu.click();//n	
 //driver.findElement(By.linkText("COURSES")).click();//n
-By locator=By.linkText("COURSES");
+//By locator=By.linkText("COURSES");
 //By parentmenuLocator=By.className("menulink");
-parentMenuSubmenu( driver,parentMenu,locator);
+//parentMenuSubmenu( driver,parentMenu,locator);
 //parentMenuSubmenu( driver,parentMenu,"COURSES");
 //parentMenuSubmenu( driver,parentmenuLocator,locator);
 

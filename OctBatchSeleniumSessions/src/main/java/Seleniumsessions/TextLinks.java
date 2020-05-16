@@ -26,41 +26,42 @@ public class TextLinks {
 		
 	List<WebElement> linksList	=
 			driver.findElements(By.tagName("a"));
-	//System.out.println(linksList.size());	//linksList.size()	 
+	System.out.println(linksList.size());	//linksList.size()	 
 	
 
 	
 		
-	//for(int i=0;i<linksList.size()-1;i++) {	
-		//.get.getText() to get the text of all the links
-	//String val	=linksList.get(i).getText();
+	for(int i=0;i<linksList.size()-1;i++) {	
+		//.getText() to get the text of all the links
+	String val	=linksList.get(i).getText();
 	
 	
-	//if(!val.isEmpty()) {
-	//	System.out.println(i+"--->"+val);
-	//}
+	if(!val.isEmpty()) 
+		System.out.println(i+"--->"+val);
+	
 	
 	//capture href or url values for each link
 	
-	//get().getAttribute("href")
-	//System.out.println(linksList.get(i).getAttribute("href"));
+//.getAttribute("href")
+	System.out.println(linksList.get(i).getAttribute("href"));
 	
 	
 	
 	
 	
+	
+	
+		
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-//}
+}

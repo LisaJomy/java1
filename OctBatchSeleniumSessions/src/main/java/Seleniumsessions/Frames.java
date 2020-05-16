@@ -19,11 +19,11 @@ public class Frames {
 //if by notmal method if you get NoSuchElementFoundException check wheather the element is on a frame
 //		right click you will see "View Frame Source"
 //		go to the frame----do in ordinary method first --then if it is frame then use switch to command
-	//	1st method
+	//	1st method- index
 		//driver.switchTo().frame(2);
 		//2nd method--check for id or name attribute
 		//driver.switchTo().frame("main");//name attribute is used here
-//		 interact with the webelement in the frame
+//		 using the webelement 
 		//3rd method  //frameelement
 		List<WebElement> framelist=driver.findElements(By.tagName("frame"));
 		System.out.println(framelist.size());
